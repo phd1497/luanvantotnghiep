@@ -107,23 +107,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!--main content start-->
 <section id="main-content">
 	<section class="wrapper">
-		<!-- //market-->
+		@yield('admin_content')
 		
-		<!-- //market-->
-		
-		<div class="agil-info-calendar">
-		<!-- calendar -->
-		
-		<!-- //calendar -->
-		<div class="col-md-6 w3agile-notifications">
-			
-			</div>
-			<div class="clearfix"> </div>
-		</div>
-			<!-- tasks -->
-			
-		<!-- //tasks -->
-		<h3>WELCOME TO ADMIN PAGE</h3>
 </section>
  <!-- footer -->
 		  <div class="footer">

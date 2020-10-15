@@ -18,3 +18,4 @@ Route::get('/trang-chu', 'HomeController@index');
 
 Route::get('/admin', 'AdminController@index');
 Route::get('/dashboard', 'AdminController@show_dashboard');
+Route::post('/admin-dashboard', 'AdminController@dashboard');
