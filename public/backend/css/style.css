@@ -50,6 +50,17 @@ body a:hover{
     -o-transition:all .3s ease-in-out;
     transition:all .3s ease-in-out;
 }
+
+span.fa-thumb-styling.fa.fa-thumbs-up {
+    font-size: 28px;
+    color: blue;
+}
+
+span.fa-thumb-styling.fa.fa-thumbs-down {
+    font-size: 28px;
+    color: red;
+}
+
 #sidebar ul li {
     position: relative;
 }
@@ -3148,7 +3159,7 @@ div#graph1, div#graph4, div#graph5, div#graph6, div#graph7, div#graph8, div#grap
 }
 
 span.text-alert {
-    color: greenyellow;
+    color: rgb(142,68,173);
     font-size: 17px;
     width: 100%;
     text-align: center;
