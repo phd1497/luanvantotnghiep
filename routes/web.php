@@ -12,10 +12,21 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+//frontend
 Route::get('/','HomeController@index');
 Route::get('/trang-chu', 'HomeController@index');
 
+
+
+//backend
 Route::get('/admin', 'AdminController@index');
 Route::get('/dashboard', 'AdminController@show_dashboard');
+Route::get('/logout', 'AdminController@logout'); //khi gửi hàm log out tới web root, thì nó sẽ thực thi controller và thực thi hàm log out
 Route::post('/admin-dashboard', 'AdminController@dashboard');
+
+
+//category product
+Route::get('/add-category-product', 'CategoryProduct@add_category_product');
+Route::get('/all-category-product', 'CategoryProduct@all_category_product');
+
+Route::post('/save-category-product', 'CategoryProduct@save_category_product');

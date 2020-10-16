@@ -39,7 +39,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!--logo start-->
 <div class="brand">
     <a href="index.html" class="logo">
-        admin
+        ADMIN
         
     </a>
     <div class="sidebar-toggle-box">
@@ -58,13 +58,23 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <li class="dropdown">
             <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                 <img alt="" src="{{asset('public/backend/images/2.png')}}">
-                <span class="username">John Doe</span>
+                <span class="username">
+                	
+				     <?php
+					$name = Session::get('admin_name');
+					if($name)//nếu có tồn tại message thì lấy
+					{
+						echo $name ;
+					}
+					?>
+
+                </span>
                 <b class="caret"></b>
             </a>
             <ul class="dropdown-menu extended logout">
                 <li><a href="#"><i class=" fa fa-suitcase"></i>Profile</a></li>
                 <li><a href="#"><i class="fa fa-cog"></i> Settings</a></li>
-                <li><a href="login.html"><i class="fa fa-key"></i> Log Out</a></li>
+                <li><a href="{{URL::to('/logout')}}"><i class="fa fa-key"></i> Log Out</a></li>
             </ul>
         </li>
         <!-- user login dropdown end -->
@@ -90,11 +100,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <li class="sub-menu">
                     <a href="javascript:;">
                         <i class="fa fa-book"></i>
-                        <span>DANH MUC SAN PHAM</span>
+                        <span>DANH MỤC SẢN PHẨM</span>
                     </a>
                     <ul class="sub">
-						<li><a href="typography.html">THEM DANH MUC</a></li>
-						<li><a href="glyphicon.html">LIET KE DANH MUC</a></li>
+						<li><a href="{{URL::to('/add-category-product')}}">THÊM DANH MỤC SẢN PHẨM</a></li>
+						<li><a href="{{URL::to('/all-category-product')}}">LIỆT KÊ DANH MỤC</a></li>
                        
                     </ul>
                 </li>
